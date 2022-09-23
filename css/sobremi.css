@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: rgb(235, 215, 202);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: start;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.download_curriculum {
+    text-decoration: none;
+    color: black;
+}
+
+.container_cv {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.4s;
+}
+
+.container_cv:hover {
+    background-color: black;
+    color: white;
+}
+
+.cv {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.4s;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    color: rgb(100,100,100);
+    transform: scale(1.1);
+}
+
+.title {
+    margin: 40px 0;
+}
+
+.container {
+    width: 50%;
+    min-width: 700px;
+    margin-bottom: 30px;
+}
+
+.part {
+    border-radius: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.part .part_item {
+    padding: 10px;
+    box-shadow: 0 1px 8px rgba(56, 56, 56, 0.46);
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.part .subtitle {
+    margin-bottom: 20px;
+    color: rgb(100,100,100);
+}
+
+.part .item_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.part .item_date p {
+    font-size: 18px;
+    font-weight: 700;
+    color: darkcyan;
+}
+
+.part .item_business {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.part .item_business img {
+    width: 70px;
+}
+
+.part .item_business p {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.part .item_description {
+    margin-bottom: 5px;
+}
+
+.part .item_links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.part .item_links a {
+    text-decoration: none;
+    color: rgb(100,100,100);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: rgb(100,100,100);
+    padding: 5px 10px;
+    margin-right: 10px;
+    transition: all 0.4s;
+}
+
+.part .item_links a:hover {
+    background-color: rgb(100,100,100);
+    color: white;
+    transform: scale(1.1);
+}
+
+.part .list_items_ability {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+    list-style: none;
+    margin: 1em auto;
+    padding: 0;
+    max-width: 800px;
+}
+
+.part .item_ability {
+    display: inline-block;
+    padding: 5px 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: black;
+    height: 40px;
+}
+
+.part .item_ability div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.part .item_ability div img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.part .item_ability div p {
+    font-size: 16px;
+    font-weight: 700;
+    width: auto;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .header {
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .part_item {
+        min-width: 250px;
+        width: 90vw;
+    }
+
+    .part_item .item_header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item_date p {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .item_business img {
+        width: 50px;
+    }
+
+    .item_business p {
+        font-size: 14px;
+    }
+
+    .part .list_items_ability {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        grid-gap: 20px;
+        grid-auto-flow: dense;
+        list-style: none;
+        margin: 1em auto;
+        padding: 0;
+        max-width: 800px;
+    }
+
+}
